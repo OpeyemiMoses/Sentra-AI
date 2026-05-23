@@ -2303,6 +2303,7 @@ input[type="range"] {
 
 .app-page.active {
   display: block;
+  width: 100%;
   animation: riseIn 0.22s ease both;
 }
 
