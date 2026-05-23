@@ -1480,9 +1480,10 @@ button { font-family: inherit; cursor: pointer; }
 /* performance Page */
 
 .performance-page {
-  width: min(1180px, calc(100% - 40px));
+  width: 100%;
+  max-width: 1180px;
   margin: 0 auto;
-  padding: 56px 0 80px;
+  padding: 56px 16px 80px;
 }
 
 .performance-hero {
@@ -1937,11 +1938,7 @@ button { font-family: inherit; cursor: pointer; }
   }
 }
 
-@media (max-width: 640px) {
-  .performance-page {
-    width: min(100% - 28px, 1180px);
-    padding-top: 36px;
-  }
+
 
   .performance-stats {
     grid-template-columns: 1fr;
@@ -2260,9 +2257,11 @@ input[type="range"] {
 
 @media (max-width: 640px) {
   .settings-page {
-    width: min(100% - 28px, 1180px);
-    padding-top: 36px;
-  }
+  width: calc(100% - 32px);
+  margin-left: 16px;
+  margin-right: 16px;
+  padding-top: 36px;
+}
 
   .preview-metrics,
   .simulation-grid {
@@ -2471,16 +2470,16 @@ canvas {
     display: flex;
   }
 
-  .page,
-  .page-content,
-  .dashboard-page,
-  .performance-page,
-  .settings-page,
-  .feed-page {
-    width: min(100% - 28px, 1180px);
-    padding-top: 32px;
-  }
-
+.page,
+.page-content,
+.dashboard-page,
+.performance-page,
+.settings-page,
+.feed-page {
+  width: calc(100% - 32px);
+  margin: 0 auto;
+  padding-top: 32px;
+}
   .dashboard-grid,
   .metrics-grid,
   .settings-grid,
@@ -2805,5 +2804,39 @@ canvas {
     display: inline-flex !important;
     justify-content: center !important;
     align-items: center !important;
+  }
+}
+
+
+
+  .performance-stats {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .performance-stats .metric-card {
+    min-width: 0;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+
+  .performance-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-section,
+  .decision-log-card,
+  .main-performance-chart {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .table-row {
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    font-size: 0.78rem;
   }
 }
