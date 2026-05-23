@@ -2747,3 +2747,62 @@ canvas {
     transform: translate(14px, 10px);
   }
 }
+/* Mint Tokens */
+.mint-btn {
+  border: 1px solid var(--border-active);
+  border-radius: 8px;
+  background: var(--green-soft);
+  color: var(--green);
+  padding: 9px 18px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.mint-btn:hover {
+  background: rgba(0, 211, 149, 0.14);
+  border-color: rgba(0, 211, 149, 0.4);
+}
+@media (max-width: 768px) {
+  #mintTokenBtn {
+    display: inline-flex !important;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .mint-page .vault-form {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 14px !important;
+    width: 100% !important;
+  }
+
+  .mint-page .vault-form label,
+  .mint-page .vault-form select,
+  .mint-page .mint-btn,
+  .mint-page .mini-explorer-btn {
+    width: 100% !important;
+  }
+
+  .mint-page .mint-btn {
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    min-height: 46px !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .mint-page .mini-explorer-btn[hidden] {
+    display: none !important;
+  }
+
+  .mint-page .mini-explorer-btn:not([hidden]) {
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+}
