@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sentra AI | AI RWA Yield on Mantle</title>
+  <link rel="icon" type="image/png" href="assets/sentra-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav">
+      <a href="#home" class="brand" data-page-link="home">
+  <img src="assets/sentra-logo.png" alt="Sentra AI logo" class="brand-logo" />
+  <span>Sentra AI</span>
+</a>
+      <div class="desktop-links">
+        <a href="#dashboard" data-page-link="dashboard">Dashboard</a>
+        <a href="#feed" data-page-link="feed">AI Feed</a>
+        <a href="#performance" data-page-link="performance">Performance</a>
+        <a href="#settings" data-page-link="settings">Settings</a>
+       <a href="#mint" data-page-link="mint">Mint Tokens</a>
+      </div>
+      <button class="connect-btn" id="navConnectBtn"> Connect Wallet</button>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="menu-panel" id="menuPanel">
+<button class="mobile-wallet-btn" id="mobileConnectBtn">
+  Connect Wallet
+</button>
+        <a href="#dashboard" data-page-link="dashboard">Dashboard</a>
+        <a href="#feed" data-page-link="feed">AI Feed</a>
+        <a href="#performance" data-page-link="performance">Performance</a>
+        <a href="#settings" data-page-link="settings">Settings</a>
+          <a href="#mint" data-page-link="mint">Mint Tokens</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="single-page-shell">
+    <section id="home" class="app-page active page-content" data-page="home">
+<section class="hero">
+      <div class="hero-content">
+        <div class="badge">
+          <span></span>
+          Mantle Turing Test Hackathon 2026
+        </div>
+        <h2>AI-managed yield for real-world assets on Mantle.</h2>
+        <p>
+          Sentra allocates between mETH and USDY using an autonomous,
+          risk-aware AI agent — optimized for yield, protected against volatility.
+        </p>
+        <div class="hero-actions">
+          <button class="primary-btn" id="heroConnectBtn">Connect Wallet</button>
+          <a href="#how" class="secondary-btn">See how it works</a>
+        </div>
+  <div class="trust-row">
+  <div>
+    <strong>mETH</strong>
+    <span>Liquid staking yield</span>
+  </div>
+
+  <div>
+    <strong>USDY</strong>
+    <span>Tokenized RWA yield</span>
+  </div>
+
+  <div>
+    <strong>USDC</strong>
+    <span>Stablecoin liquidity</span>
+  </div>
+
+  <div>
+    <strong>mUSD</strong>
+    <span>Mantle-native stable yield</span>
+  </div>
+
+  <div>
+    <strong>AI Agent</strong>
+    <span>Risk-aware allocation</span>
+  </div>
+</div>
+      </div>
+
+      <div class="hero-card">
+        <div class="card-top">
+          <div>
+            <span class="label">Vault Overview</span>
+            <h2 id="homeVaultBalance">$12,840.55</h2>
+          </div>
+          <span class="status-pill1">Live</span>
+        </div>
+     <div class="allocation-block">
+  <div class="allocation-top">
+    <span>Current allocation</span>
+    <strong>Balanced</strong>
+  </div>
+
+ <div class="bar multi-bar" id="homeAllocationBar">
+    <div class="bar-segment bar-meth"></div>
+    <div class="bar-segment bar-usdy"></div>
+    <div class="bar-segment bar-usdc"></div>
+    <div class="bar-segment bar-musd"></div>
+  </div>
+
+  <div class="allocation-labels multi-labels" id="homeAllocationLabels">
+    <span><i class="dot meth"></i>38% mETH</span>
+    <span><i class="dot usdy"></i>26% USDY</span>
+    <span><i class="dot usdc"></i>20% USDC</span>
+    <span><i class="dot musd"></i>16% mUSD</span>
+  </div>
+</div>
+        <div class="metrics-row">
+          <div class="metric-box">
+            <span>Projected APY</span>
+            <strong id="homeProjectedApy">8.4%</strong>
+          </div>
+          <div class="metric-box">
+            <span>Risk score</span>
+            <strong class="green" id="homeRiskScore">Low</strong>
+          </div>
+        </div>
+       <div class="ai-note" id="homeAiNote">
+  <span class="pulse"></span>
+  AI recommends maintaining current allocation while mETH yield stays stable.
+</div>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <p class="section-label">How it works</p>
+      <h3>Simple. Powerful. AI-Driven.</h3>
+      <div class="steps">
+       <article>
+    <div class="step-inner">
+      <div class="step-text">
+        <span class="step-Num">01</span>
+        <h3>Connect wallet</h3>
+        <p>Connect your wallet on Mantle and view your supported assets.</p>
+      </div>
+      <div class="step-img">
+        <img src="assets/connect.png" alt="Connect wallet" />
+      </div>
+    </div>
+  </article>
+          <article>
+    <div class="step-inner">
+      <div class="step-text">
+        <span class="step-Num">02</span>
+        <h3>Choose risk profile</h3>
+        <p>Select Conservative, Balanced, or Aggressive allocation mode.</p>
+      </div>
+      <div class="step-img">
+        <img src="assets/choose.png" alt="Choose profile" />
+      </div>
+    </div>
+  </article>
+               <article>
+    <div class="step-inner">
+      <div class="step-text">
+        <span class="step-Num">03</span>
+        <h3>AI manages strategy</h3>
+        <p>The agent monitors yield and volatility, rebalancing automatically when needed.</p>
+      </div>
+      <div class="step-img">
+        <img src="assets/ai.png" alt="AI manages strategy" />
+      </div>
+    </div>
+  </article>
+      </div>
+    </section>
+    </section>
+
+    <section id="dashboard" class="app-page page-content" data-page="dashboard">
+<div class="dashboard-page">
+
+      <div class="page-heading">
+        <p class="section-label">Dashboard</p>
+        <h2>YOUR AI-MANAGED RWA VAULT.</h2>
+        <p>Track your balance, yield, asset allocation, and AI agent status.</p>
+      </div>
+
+      <div class="dashboard-grid">
+      <div class="portfolio-card">
+  <div class="portfolio-card-top">
+    <div>
+      <span class="label">Total vault balance</span>
+      <h3>$12,840.55</h3>
+    </div>
+
+    <span class="status-pill">
+      <img src="assets/mantle-logo.png" alt="Mantle logo" class="mantle-logo-img-head" />
+      Mantle Sepolia
+    </span>
+  </div>
+
+<div class="portfolio-allocation">
+  <div class="donut-chart multi-asset-donut" id="dashboardAllocationDonut">
+    <div class="donut-center">
+      <strong id="dashboardAssetCount">0</strong>
+      <span>Assets</span>
+    </div>
+  </div>
+</div>
+
+<div class="asset-breakdown">
+  <div class="asset-row">
+    <div class="asset-info">
+      <span class="asset-dot meth"></span>
+      <div>
+        <strong>mETH</strong>
+        <span>Liquid staking exposure</span>
+      </div>
+    </div>
+
+    <div class="asset-value">
+    <strong id="dashboardMETHPercent">38%</strong>
+    <span id="dashboardMETHValue">$4,879.2</span>
+  </div>
+  </div>
+
+  <div class="asset-row">
+    <div class="asset-info">
+      <span class="asset-dot usdy"></span>
+      <div>
+        <strong>USDY</strong>
+        <span>Tokenized treasury / RWA</span>
+      </div>
+    </div>
+
+      <div class="asset-value">
+    <strong id="dashboardUSDYPercent">26%</strong>
+    <span id="dashboardUSDYValue">$3,338.4</span>
+  </div>
+  </div>
+
+  <div class="asset-row">
+    <div class="asset-info">
+      <span class="asset-dot usdc"></span>
+      <div>
+        <strong>USDC</strong>
+        <span>Stablecoin liquidity reserve</span>
+      </div>
+    </div>
+
+      <div class="asset-value">
+    <strong id="dashboardUSDCPercent">20%</strong>
+    <span id="dashboardUSDCValue">$2,568.0</span>
+  </div>
+  </div>
+
+  <div class="asset-row">
+    <div class="asset-info">
+      <span class="asset-dot musd"></span>
+      <div>
+        <strong>mUSD</strong>
+        <span>Mantle-native dollar exposure</span>
+      </div>
+    </div>
+
+    <div class="asset-value">
+  <strong id="dashboardMUSDPercent">16%</strong>
+  <span id="dashboardMUSDValue">$2,054.4</span>
+</div>
+  </div>
+</div>
+</div>
+
+      <div class="stat-card">
+  <div class="stat-card-inner">
+    <div class="stat-card-text">
+      <span class="label">Yield earned</span>
+      <h3 id="yieldEarnedValue">$1.69</h3>
+      <p>Estimated since first deposit.</p>
+    </div>
+    <div class="stat-card-img">
+      <img src="assets/yield.png" alt="Yield" />
+    </div>
+  </div>
+</div>
+        <div class="stat-card">
+  <div class="stat-card-inner">
+    <div class="stat-card-text">
+      <span class="label">Projected APY</span>
+     <h3 id="projectedApyValue">4.79%%</h3>
+      <p>Based on current mETH + USDY mix</p>
+    </div>
+    <div class="stat-card-img">
+      <img src="assets/apy.png" alt="Projected APY" />
+    </div>
+  </div>
+</div>
+        <div class="stat-card">
+  <div class="stat-card-inner">
+    <div class="stat-card-text">
+      <span class="label">AI risk score</span>
+      <h3 id="aiRiskScoreValue">Low</h3>
+      <p>Balanced exposure, USDY buffer active.</p>
+    </div>
+    <div class="stat-card-img">
+      <img src="assets/risk.png" alt="AI risk score" />
+    </div>
+  </div>
+</div>
+                  <div class="stat-card">
+  <div class="stat-card-inner">
+    <div class="stat-card-text">
+      <span class="label">Next AI check</span>
+      <h3 id="nextCheckValue">--:--</h3>
+      <p>Agent scans market conditions on cycle.</p>
+    </div>
+    <div class="stat-card-img">
+      <img src="assets/ai-check.png" alt="Next AI check" />
+    </div>
+  </div>
+</div>
+    
+      </div>
+
+      <div class="below-grid">
+
+      <div class="section-card">
+  <div class="section-card-top">
+    <div>
+      <span class="label">AI Agent</span>
+      <h3 id="agentStatusText">Agent is Active</h3>
+    </div>
+    <button class="agent-toggle" id="agentToggleBtn">Pause Agent</button>
+  </div>
+
+  <div class="agent-status-list">
+    <div class="agent-status-item">
+      <span>Last action</span>
+      <strong id="agentLastAction">Monitoring vault conditions</strong>
+      <small id="agentLastActionTime">Waiting for first scan</small>
+    </div>
+
+    <div class="agent-status-item">
+      <span>Next rebalance check</span>
+      <strong id="agentNextCheck">In 5:00</strong>
+      <small>Automated risk scan</small>
+    </div>
+  </div>
+</div>
+
+        <div class="section-card">
+          <div class="section-card-top">
+            <div>
+              <span class="label">Live Activity</span>
+              <h3>Recent AI Decisions</h3>
+            </div>
+            <a href="#feed" class="view-link" data-page-link="feed">View All</a>
+          </div>
+          <div class="mini-feed" id="dashboardActivityList">
+            <div class="feed-item">
+              <span class="feed-dot green"></span>
+              <div>
+                <strong>Increased mETH allocation</strong>
+                <p>mETH APY improved while risk stayed within balanced range.</p>
+              </div>
+            </div>
+            <div class="feed-item">
+              <span class="feed-dot yellow"></span>
+              <div>
+                <strong>Monitored USDY liquidity</strong>
+                <p>USDY stayed stable — no emergency rebalance triggered.</p>
+              </div>
+            </div>
+            <div class="feed-item">
+              <span class="feed-dot green"></span>
+              <div>
+                <strong>Risk score updated</strong>
+                <p>Vault risk score dropped after market volatility cooled.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-card">
+          <div class="section-card-top">
+            <div>
+              <span class="label">Vault Actions</span>
+              <h3>Deposit / Withdraw</h3>
+            </div>
+          </div>
+          <div class="action-tabs">
+            <button class="action-tab active" data-action-tab="deposit">Deposit</button>
+            <button class="action-tab" data-action-tab="withdraw">Withdraw</button>
+          </div>
+         <div class="vault-form">
+  <label>
+    Amount
+    <input id="vaultAmountInput" type="number" placeholder="0.00" min="0" step="0.01" />
+  </label>
+
+  <label>
+  Asset
+  <select id="vaultAssetSelect">
+    <option value="mETH">mETH</option>
+    <option value="USDY">USDY</option>
+    <option value="mUSD">mUSD</option>
+    <option value="USDC">USDC</option>
+  </select>
+
+  <div class="vault-balance-row">
+    <span id="vaultBalanceLabel">Wallet balance</span>
+    <strong id="vaultSelectedBalance">--</strong>
+  </div>
+</label>
+
+  <button class="primary-btn" id="confirmVaultAction">
+    Confirm Deposit
+  </button>
+</div>
+        </div>
+
+        <div class="section-card">
+          <div class="section-card-top">
+            <div>
+              <span class="label">Protocol Health</span>
+              <h3>Monitored Protocols</h3>
+            </div>
+          </div>
+          <div class="protocol-list">
+            <div class="protocol-row">
+              <div class="protocol-info">
+                <strong>Merchant Moe</strong>
+                <span>Liquidity and routing health</span>
+              </div>
+              <span class="health-badge green">Healthy</span>
+            </div>
+            <div class="protocol-row">
+              <div class="protocol-info">
+                <strong>Agni Finance</strong>
+                <span>Pool depth and volatility</span>
+              </div>
+              <span class="health-badge yellow">Watching</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="quick-stats-bar">
+        <div class="quick-stat">
+          <span>Mantle gas</span>
+          <strong>0.014 MNT</strong>
+        </div>
+        <div class="quick-stat">
+          <span>mETH APY</span>
+          <strong>4.82%</strong>
+        </div>
+        <div class="quick-stat">
+          <span>USDY yield</span>
+          <strong>5.10%</strong>
+        </div>
+        <div class="quick-stat">
+          <span>Last updated</span>
+          <strong>2:46 PM</strong>
+        </div>
+      </div>
+
+    </div>
+    </section>
+
+    <section id="feed" class="app-page page-content" data-page="feed">
+<div class="feed-page">
+
+      <!-- Page Heading -->
+      <div class="page-heading">
+        <p class="section-label">AI Decision Feed</p>
+        <h2>EVERY MOVE THE AGENT MAKES</h2>
+        <p>A full history of AI-driven rebalances, risk checks, and yield updates for your vault.</p>
+      </div>
+
+      <!-- Stats Summary Bar -->
+      <div class="feed-stats">
+        <div class="feed-stat">
+          <span>Total actions</span>
+          <strong>48</strong>
+        </div>
+        <div class="feed-stat">
+          <span>Last rebalance</span>
+          <strong>2 hrs ago</strong>
+        </div>
+        <div class="feed-stat">
+          <span>Actions this week</span>
+          <strong>12</strong>
+        </div>
+        <div class="feed-stat">
+          <span>Strategy mode</span>
+          <strong class="green" id="feedStrategyMode">Balanced</strong>
+        </div>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="feed-filters">
+        <button class="feed-filter active" data-filter="all">All</button>
+        <button class="feed-filter" data-filter="rebalance">Rebalance</button>
+        <button class="feed-filter" data-filter="risk">Risk Alert</button>
+        <button class="feed-filter" data-filter="monitoring">Monitoring</button>
+        <button class="feed-filter" data-filter="yield">Yield Update</button>
+      </div>
+
+     <!-- Feed List -->
+<div class="feed-list" id="feedList">
+
+  <div class="feed-entry" data-type="rebalance">
+    <div class="feed-entry-left">
+      <span class="feed-dot green"></span>
+    </div>
+    <div class="feed-entry-body">
+      <div class="feed-entry-top">
+        <strong>Increased mETH allocation by 12%</strong>
+        <span class="feed-tag green">Rebalance</span>
+      </div>
+      <p>mETH staking APY climbed to 5.4%, above the balanced threshold. Agent shifted allocation from USDY to capture higher yield.</p>
+      <small>Today, 2:42 PM</small>
+    </div>
+  </div>
+
+  <div class="feed-entry" data-type="monitoring">
+    <div class="feed-entry-left">
+      <span class="feed-dot yellow"></span>
+    </div>
+    <div class="feed-entry-body">
+      
+      <div class="feed-entry-top">
+        <strong>Monitored USDY liquidity depth</strong>
+        <span class="feed-tag yellow">Monitoring</span>
+      </div>
+      <p>USDY pool depth checked against minimum threshold. Liquidity remained stable — no emergency rebalance triggered.</p>
+      <small>Today, 1:18 PM</small>
+    </div>
+  </div>
+
+  <div class="feed-entry" data-type="yield">
+    <div class="feed-entry-left">
+      <span class="feed-dot green"></span>
+    </div>
+    <div class="feed-entry-body">
+      <div class="feed-entry-top">
+        <strong>Yield rate updated — mETH at 4.82%</strong>
+        <span class="feed-tag green">Yield Update</span>
+      </div>
+      <p>Agent pulled latest APY data from Mantle protocols. No allocation change required at current risk level.</p>
+      <small>Today, 12:00 PM</small>
+    </div>
+  </div>
+
+  <div class="feed-entry" data-type="risk">
+    <div class="feed-entry-left">
+      <span class="feed-dot red"></span>
+    </div>
+    <div class="feed-entry-body">
+      <div class="feed-entry-top">
+        <strong>Risk alert — mETH volatility spike detected</strong>
+        <span class="feed-tag red">Risk Alert</span>
+      </div>
+      <p>Short-term volatility in mETH exceeded the balanced risk threshold. Agent increased USDY buffer by 8% as a precaution.</p>
+      <small>Yesterday, 9:14 AM</small>
+    </div>
+  </div>
+
+  <div class="feed-entry" data-type="rebalance">
+    <div class="feed-entry-left">
+      <span class="feed-dot green"></span>
+    </div>
+    <div class="feed-entry-body">
+      <div class="feed-entry-top">
+        <strong>Restored mETH allocation after volatility cooled</strong>
+        <span class="feed-tag green">Rebalance</span>
+      </div>
+      <p>Volatility normalised. Agent moved allocation back toward mETH to resume yield optimisation.</p>
+      <small>Yesterday, 11:40 AM</small>
+    </div>
+  </div>
+
+  <div class="feed-entry" data-type="monitoring">
+    <div class="feed-entry-left">
+      <span class="feed-dot yellow"></span>
+    </div>
+    <div class="feed-entry-body">
+      <div class="feed-entry-top">
+        <strong>Routine risk scan completed</strong>
+        <span class="feed-tag yellow">Monitoring</span>
+      </div>
+      <p>Agent completed scheduled risk scan across Merchant Moe and Agni Finance. All protocols within healthy range.</p>
+      <small>Yesterday, 8:00 AM</small>
+    </div>
+  </div>
+
+  <div class="feed-entry" data-type="yield">
+    <div class="feed-entry-left">
+      <span class="feed-dot green"></span>
+    </div>
+    <div class="feed-entry-body">
+      <div class="feed-entry-top">
+        <strong>USDY yield confirmed at 5.10%</strong>
+        <span class="feed-tag green">Yield Update</span>
+      </div>
+      <p>USDY tokenized treasury yield held steady. Agent factored updated rate into next allocation decision cycle.</p>
+      <small>2 days ago, 3:22 PM</small>
+    </div>
+  </div>
+
+</div>
+
+      <!-- Empty State (hidden by default) -->
+      <div class="feed-empty" id="feedEmpty" style="display:none;">
+        <p>🤖</p>
+        <strong>No actions yet</strong>
+        <p>The AI agent hasn't made any decisions for this wallet. Deposit assets to activate the vault.</p>
+      </div>
+
+    </div>
+    </section>
+
+    <section id="performance" class="app-page page-content performance-page" data-page="performance">
+<section class="performance-hero rise-section">
+      <span class="label">Yield performance</span>
+      <h1>AI-Optimized Performance</h1>
+      <p>
+        Compare the Sentra AI Vault against passive holding strategies across Mantle yield assets.
+      </p>
+    </section>
+
+    <section class="performance-stats rise-section">
+      <article class="metric-card">
+        <span>Vault APY</span>
+        <strong>18.42%</strong>
+        <p>AI-optimized annualized return</p>
+      </article>
+
+      <article class="metric-card">
+        <span>Net Return</span>
+        <strong class="positive">+42.8%</strong>
+        <p>After simulated rebalancing</p>
+      </article>
+
+      <article class="metric-card">
+        <span>Risk Score</span>
+        <strong>Medium</strong>
+        <p>Balanced exposure profile</p>
+      </article>
+
+      <article class="metric-card">
+        <span>Capital Protected</span>
+        <strong>93%</strong>
+        <p>During risk periods</p>
+      </article>
+
+      <article class="metric-card">
+        <span>AI Confidence</span>
+        <strong>87%</strong>
+        <p>Based on current signals</p>
+      </article>
+    </section>
+
+    <section class="chart-card main-performance-chart rise-section">
+      <div class="chart-head">
+        <div>
+          <span class="label">Strategy comparison</span>
+          <h2>Sentra AI Vault vs passive holding</h2>
+        </div>
+
+        <div class="timeframe-tabs">
+          <button data-range="7D">7D</button>
+          <button data-range="30D">30D</button>
+          <button data-range="90D">90D</button>
+          <button data-range="1Y">1Y</button>
+          <button data-range="ALL">ALL</button>
+        </div>
+      </div>
+
+      <div class="line-chart-wrap">
+        <svg class="line-chart" viewBox="0 0 900 360" role="img" aria-label="Yield performance line chart">
+          <line x1="60" y1="300" x2="860" y2="300" class="chart-grid-line" />
+          <line x1="60" y1="225" x2="860" y2="225" class="chart-grid-line" />
+          <line x1="60" y1="150" x2="860" y2="150" class="chart-grid-line" />
+          <line x1="60" y1="75" x2="860" y2="75" class="chart-grid-line" />
+
+          <polyline class="chart-line sentra-line" points="60,275 180,250 300,210 420,230 540,165 660,130 780,95 860,72" />
+          <polyline class="chart-line meth-line" points="60,275 180,235 300,185 420,245 540,170 660,150 780,130 860,115" />
+          <polyline class="chart-line usdy-line" points="60,275 180,268 300,260 420,252 540,245 660,238 780,230 860,222" />
+          <polyline class="chart-line musd-line" points="60,275 180,270 300,263 420,258 540,251 660,246 780,239 860,233" />
+          <polyline class="chart-line usdc-line" points="60,275 180,274 300,273 420,272 540,271 660,270 780,269 860,268" />
+
+          <circle class="hover-point" cx="660" cy="130" r="6" />
+        </svg>
+
+        <div class="chart-tooltip">
+          <strong>Sentra AI Vault</strong>
+          <span>APY: 18.42%</span>
+          <span>Cumulative return: +42.8%</span>
+          <span>Volatility: Medium</span>
+          <span>Max drawdown: -4.2%</span>
+          <span>Split: 38% mETH / 26% USDY / 20% USDC / 16% mUSD</span>
+        </div>
+      </div>
+
+      <div class="chart-legend">
+        <span><i class="legend-dot sentra"></i> Sentra AI Vault</span>
+        <span><i class="legend-dot meth"></i> Hold mETH</span>
+        <span><i class="legend-dot usdy"></i> Hold USDY</span>
+        <span><i class="legend-dot musd"></i> Hold mUSD</span>
+        <span><i class="legend-dot usdc"></i> Hold USDC</span>
+      </div>
+    </section>
+
+    <section class="performance-grid">
+      <article class="chart-card allocation-timeline rise-section">
+        <div class="chart-head">
+          <div>
+            <span class="label">Allocation timeline</span>
+            <h2>How the AI rotated capital</h2>
+          </div>
+        </div>
+
+        <div class="stacked-bars">
+          <div class="stack-row">
+            <span>Bull trend</span>
+            <div class="stack-bar">
+              <i class="stack-meth" style="width: 54%"></i>
+              <i class="stack-usdy" style="width: 18%"></i>
+              <i class="stack-usdc" style="width: 14%"></i>
+              <i class="stack-musd" style="width: 14%"></i>
+            </div>
+          </div>
+
+          <div class="stack-row">
+            <span>Liquidity stress</span>
+            <div class="stack-bar">
+              <i class="stack-meth" style="width: 24%"></i>
+              <i class="stack-usdy" style="width: 38%"></i>
+              <i class="stack-usdc" style="width: 22%"></i>
+              <i class="stack-musd" style="width: 16%"></i>
+            </div>
+          </div>
+
+          <div class="stack-row">
+            <span>Current</span>
+            <div class="stack-bar">
+              <i class="stack-meth" style="width: 38%"></i>
+              <i class="stack-usdy" style="width: 26%"></i>
+              <i class="stack-usdc" style="width: 20%"></i>
+              <i class="stack-musd" style="width: 16%"></i>
+            </div>
+          </div>
+        </div>
+
+        <p class="insight-note">
+          AI shifted 38% into USDY during a liquidity stress event to reduce downside exposure.
+        </p>
+      </article>
+
+      <article class="chart-card risk-visual rise-section">
+        <div class="chart-head">
+          <div>
+            <span class="label">Risk protection</span>
+            <h2>Capital defense layer</h2>
+          </div>
+        </div>
+
+        <div class="risk-list">
+          <div>
+            <span>Drawdown shield</span>
+            <strong>Active</strong>
+          </div>
+
+          <div>
+            <span>Volatility heat</span>
+            <strong class="warning">Moderate</strong>
+          </div>
+
+          <div>
+            <span>Liquidity stress</span>
+            <strong class="positive">Low</strong>
+          </div>
+        </div>
+
+        <div class="shield-meter">
+          <span style="width: 93%"></span>
+        </div>
+
+        <p class="insight-note">
+          Sentra AI reduced mETH exposure when volatility rose, protecting capital better than passive mETH holding.
+        </p>
+      </article>
+    </section>
+
+    <section class="comparison-section chart-card rise-section">
+      <div class="chart-head">
+        <div>
+          <span class="label">Benchmark table</span>
+          <h2>Active AI management vs passive strategies</h2>
+        </div>
+      </div>
+
+      <div class="comparison-table">
+        <div class="table-row table-head">
+          <span>Strategy</span>
+          <span>APY</span>
+          <span>Volatility</span>
+          <span>Drawdown</span>
+        </div>
+
+        <div class="table-row featured">
+          <span>Sentra AI Vault</span>
+          <span>18.4%</span>
+          <span>Medium</span>
+          <span>-4.2%</span>
+        </div>
+
+        <div class="table-row">
+          <span>mETH Hold</span>
+          <span>15.1%</span>
+          <span>High</span>
+          <span>-14.8%</span>
+        </div>
+
+        <div class="table-row">
+          <span>USDY Hold</span>
+          <span>5.2%</span>
+          <span>Low</span>
+          <span>-0.8%</span>
+        </div>
+
+        <div class="table-row">
+          <span>mUSD Hold</span>
+          <span>4.9%</span>
+          <span>Low</span>
+          <span>-0.5%</span>
+        </div>
+
+        <div class="table-row">
+          <span>USDC Idle</span>
+          <span>0.3%</span>
+          <span>Very Low</span>
+          <span>0%</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="decision-log-card chart-card rise-section">
+      <div class="chart-head">
+        <div>
+          <span class="label">AI decision log</span>
+          <h2>Recent strategy actions</h2>
+        </div>
+
+        <a href="#feed" data-page-link="feed">View full feed</a>
+      </div>
+
+      <div class="decision-list">
+        <div>
+          <span></span>
+          <p>Reduced mETH exposure due to falling DEX liquidity.</p>
+        </div>
+
+        <div>
+          <span></span>
+          <p>Moved 22% into USDY treasury yield during volatility spike.</p>
+        </div>
+
+        <div>
+          <span></span>
+          <p>Entered mETH strategy after APY rose above 17.8%.</p>
+        </div>
+
+        <div>
+          <span></span>
+          <p>Exited protocol after TVL instability signal increased.</p>
+        </div>
+      </div>
+    </section>
+    </section>
+
+    <section id="settings" class="app-page page-content" data-page="settings">
+<section class="settings-page">
+      <div class="settings-hero">
+        <span class="label">Risk Profile</span>
+        <h1>Train your AI portfolio manager.</h1>
+        <p>
+          Tell Sentra AI how much risk you are willing to take. Your profile controls allocation,
+          rebalancing speed, downside protection, and automation behaviour.
+        </p>
+      </div>
+
+      <section class="risk-selector">
+        <button class="risk-card" data-risk="conservative">
+          <span>01</span>
+          <h3>Conservative</h3>
+          <p>Prioritizes capital preservation, stable RWA yield, and low volatility.</p>
+          <ul>
+            <li>Higher USDY / mUSD exposure</li>
+            <li>Fast exits from risky pools</li>
+            <li>Safer protocols only</li>
+          </ul>
+        </button>
+
+        <button class="risk-card active" data-risk="balanced">
+          <span>02</span>
+          <h3>Balanced</h3>
+          <p>Optimizes for moderate growth with diversified exposure and controlled downside.</p>
+          <ul>
+            <li>Mixed mETH + stable allocation</li>
+            <li>Adaptive rebalancing</li>
+            <li>Selective higher-yield opportunities</li>
+          </ul>
+        </button>
+
+        <button class="risk-card" data-risk="aggressive">
+          <span>03</span>
+          <h3>Aggressive</h3>
+          <p>Targets maximum yield with higher volatility tolerance and faster strategy rotation.</p>
+          <ul>
+            <li>Heavy mETH allocation</li>
+            <li>High-yield strategies</li>
+            <li>Higher drawdown tolerance</li>
+          </ul>
+        </button>
+      </section>
+
+      <section class="settings-grid">
+        <div class="settings-card ai-preview-card">
+          <div class="card-head">
+            <div>
+              <span class="label">AI Behaviour Preview</span>
+              <h2 id="profileTitle">Balanced Profile</h2>
+            </div>
+            <span class="status-pill">Active</span>
+          </div>
+
+          <div class="preview-metrics">
+            <div>
+              <span>Expected APY</span>
+              <strong id="apyRange">10–18%</strong>
+            </div>
+
+            <div>
+              <span>Expected Drawdown</span>
+              <strong id="drawdown">Medium</strong>
+            </div>
+
+            <div>
+              <span>Automation Speed</span>
+              <strong id="reactionSpeed">Moderate</strong>
+            </div>
+          </div>
+
+          <div class="allocation-preview">
+            <div class="allocation-row">
+              <span id="allocationOneLabel">mETH</span>
+              <strong id="allocationOneValue">50%</strong>
+            </div>
+            <div class="allocation-track">
+              <span id="allocationOneBar" style="width: 50%"></span>
+            </div>
+
+            <div class="allocation-row">
+              <span id="allocationTwoLabel">USDY / mUSD</span>
+              <strong id="allocationTwoValue">40%</strong>
+            </div>
+            <div class="allocation-track">
+              <span id="allocationTwoBar" style="width: 40%"></span>
+            </div>
+
+            <div class="allocation-row">
+              <span id="allocationThreeLabel">Active opportunities</span>
+              <strong id="allocationThreeValue">10%</strong>
+            </div>
+            <div class="allocation-track">
+              <span id="allocationThreeBar" style="width: 10%"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="settings-card">
+          <div class="card-head">
+            <div>
+              <span class="label">Risk Controls</span>
+              <h2>Guardrails</h2>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label for="drawdownLimit">Max drawdown limit</label>
+            <select id="drawdownLimit">
+              <option>5%</option>
+              <option selected>10%</option>
+              <option>20%</option>
+            </select>
+          </div>
+
+          <div class="control-group">
+            <label for="stablePreference">Stable asset preference</label>
+            <div class="slider-labels">
+              <span>More Stable</span>
+              <span>More Growth</span>
+            </div>
+            <input type="range" id="stablePreference" min="1" max="100" value="52" />
+          </div>
+
+          <div class="toggle-row">
+            <div>
+              <strong>Auto-Rebalancing</strong>
+              <span>Allow Sentra AI to reallocate automatically.</span>
+            </div>
+            <label class="switch">
+              <input type="checkbox" checked />
+              <span></span>
+            </label>
+          </div>
+
+          <div class="toggle-row">
+            <div>
+              <strong>Emergency Protection</strong>
+              <span>Auto-exit during liquidity stress.</span>
+            </div>
+            <label class="switch">
+              <input type="checkbox" checked />
+              <span></span>
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <section class="settings-grid lower-grid">
+        <div class="settings-card">
+          <div class="card-head">
+            <div>
+              <span class="label">Strategy Restrictions</span>
+              <h2>Allowed behaviour</h2>
+            </div>
+          </div>
+
+          <div class="restriction-list">
+            <label><input type="checkbox" checked /> Avoid low-liquidity protocols</label>
+            <label><input type="checkbox" checked /> No leveraged strategies</label>
+            <label><input type="checkbox" /> Exclude Pendle</label>
+            <label><input type="checkbox" /> Stable-only mode</label>
+            <label><input type="checkbox" /> ETH-heavy mode</label>
+          </div>
+        </div>
+
+        <div class="settings-card">
+          <div class="card-head">
+            <div>
+              <span class="label">90-Day Simulation</span>
+              <h2>If this profile was used recently</h2>
+            </div>
+          </div>
+
+          <div class="simulation-grid">
+            <div>
+              <span>Estimated return</span>
+              <strong id="simReturn">+14.2%</strong>
+            </div>
+            <div>
+              <span>Max drawdown</span>
+              <strong id="simDrawdown">-4.8%</strong>
+            </div>
+            <div>
+              <span>Volatility</span>
+              <strong id="simVolatility">Medium</strong>
+            </div>
+            <div>
+              <span>Best week</span>
+              <strong id="simBest">+3.6%</strong>
+            </div>
+            <div>
+              <span>Worst week</span>
+              <strong id="simWorst">-1.9%</strong>
+            </div>
+            <div>
+              <span>vs Passive</span>
+              <strong id="simBenchmark">+5.4%</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ai-summary">
+        <span class="label">Personalized AI Summary</span>
+        <p id="aiSummary">
+          Your profile prioritizes moderate growth with controlled downside exposure. Sentra AI will dynamically allocate between mETH and USDY/mUSD strategies while avoiding high-volatility pools.
+        </p>
+      </section>
+    </section>
+  </section>
+
+      <section id="mint" class="app-page page-content" data-page="mint">
+  <section class="settings-page mint-page">
+    <div class="settings-hero">
+      <span class="label">Test Token Mint</span>
+      <h1>Mint test tokens to your wallet.</h1>
+      <p>
+        Mint mock mETH, USDY, USDC, or mUSD for testing deposits, withdrawals, and vault interactions on Mantle Sepolia.
+      </p>
+    </div>
+
+  
+
+    <section class="settings-grid">
+      <div class="settings-card ai-preview-card">
+        <div class="card-head">
+          <div>
+            <span class="label">Mint Controls</span>
+            <h2>Choose asset and amount</h2>
+          </div>
+          <span class="status-pill">Ready</span>
+        </div>
+
+        <div class="vault-form">
+          <label>
+            Token
+            <select id="mintTokenSelect">
+              <option value="mETH">mETH</option>
+              <option value="USDY">USDY</option>
+              <option value="USDC">USDC</option>
+              <option value="mUSD">mUSD</option>
+            </select>
+          </label>
+
+          <button class="connect-btn" id="mintTokenBtn">Mint Tokens</button>
+    <a id="mintExplorerBtn" class="mini-explorer-btn" href="#" target="_blank" rel="noreferrer" hidden>
+    View on Explorer
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+  </a>
+      
+        </div>
+
+        <div class="allocation-preview">
+          <div class="allocation-row">
+            <span>Connected wallet</span>
+            <strong id="mintWalletAddress">Not connected</strong>
+          </div>
+          <div class="allocation-track">
+            <span style="width: 0%"></span>
+          </div>
+        </div>
+        <p class="section-label" style="margin-top: 28px; margin-bottom: 4px;">Smart Contracts</p>
+        <div class="token-contract-links">
+  <a href="https://explorer.sepolia.mantle.xyz/token/0x14CADfD7b1AE71f0f533Cc84ab7652e8fb09B5c8" target="_blank" class="token-link-card">
+    <div>
+      <strong>mETH</strong>
+      <span>Mock Liquid Staking ETH</span>
+    </div>
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+  </a>
+
+  <a href="https://explorer.sepolia.mantle.xyz/token/0xEDB90295680f2efC2aE1044109eb404eDF27F402" target="_blank" class="token-link-card">
+    <div>
+      <strong>USDY</strong>
+      <span>Mock Tokenized RWA</span>
+    </div>
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+  </a>
+
+  <a href="https://explorer.sepolia.mantle.xyz/token/0xa22Ab840F2b49E44980ED4f709930627180C7353" target="_blank" class="token-link-card">
+    <div>
+      <strong>USDC</strong>
+      <span>Mock Stablecoin</span>
+    </div>
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+  </a>
+
+  <a href="https://explorer.sepolia.mantle.xyz/token/0x6E5673998706ab0796B49407DfD43560E71e8F4E" target="_blank" class="token-link-card">
+    <div>
+      <strong>mUSD</strong>
+      <span>Mock Mantle Dollar</span>
+    </div>
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+  </a>
+</div>
+      </div>
+
+      <div class="settings-card">
+        <div class="card-head">
+          <div>
+            <span class="label">Mint Notes</span>
+            <h2>How it works</h2>
+          </div>
+        </div>
+
+        <div class="restriction-list">
+          <label>Connect your wallet first</label>
+          <label>Select the token you want to mint</label>
+          <label>Enter the amount you need</label>
+          <label>Confirm the mint transaction</label>
+          <label>Use minted tokens on the dashboard</label>
+        </div>
+      </div>
+    </section>
+
+    <section class="ai-summary">
+      <span class="label">Mint Summary</span>
+      <p id="mintSummary">
+        This page is for generating test balances so you can keep testing deposits, withdrawals, and allocation updates without needing real funds.
+      </p>
+    </section>
+  </section>
+</section>
+  </main>
+
+  <footer class="footer">
+  <div class="footer-inner">
+    <a href="#home" class="footer-brand" data-page-link="home">
+      <span>Sentra AI - AI Powered Yield Manager</span>
+    </a>
+
+    <div class="footer-mantle">
+      <span>Built on Mantle</span>
+      <img src="assets/mantle-logo.png" alt="Mantle logo" class="mantle-logo-img" />
+    </div>
+  </div>
+</footer>
+      <div class="wallet-modal" id="walletModal" aria-hidden="true">
+  <div class="wallet-modal-backdrop" id="walletModalBackdrop"></div>
+
+  <div class="wallet-modal-card">
+    <div class="wallet-modal-head">
+      <div>
+        <p class="label">Connect wallet</p>
+        <h3>Select a wallet</h3>
+      </div>
+
+      <button class="wallet-modal-close" id="walletModalClose" type="button">×</button>
+    </div>
+
+    <div class="wallet-list" id="walletList"></div>
+  </div>
+</div>
+
+<div class="disconnect-menu" id="disconnectMenu" hidden>
+  <button type="button" id="disconnectWalletBtn">Disconnect Wallet</button>
+</div>
+<div id="toastContainer" class="toast-container"></div>
+<script src="https://cdn.jsdelivr.net/npm/ethers@6.13.4/dist/ethers.umd.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
