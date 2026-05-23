@@ -1186,8 +1186,9 @@ function showPage(pageName) {
 };
 
 document.title = pageTitles[pageName] || "Sentra AI";
-  if (window.location.hash !== `${pageName}`) {
-    window.history.pushState(null, "", `${pageName}`);
+window.history.replaceState(null, "", window.location.pathname);
+  if (window.location.hash !== `#${pageName}`) {
+    window.history.pushState(null, "", `#${pageName}`);
   }
 
   window.scrollTo({ top: 0, behavior: "smooth" });
