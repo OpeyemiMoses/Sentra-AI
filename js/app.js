@@ -1176,9 +1176,18 @@ function showPage(pageName) {
   if (menuPanel) {
     menuPanel.classList.remove("open");
   }
+  const pageTitles = {
+  home: "Sentra AI — Overview",
+  dashboard: "Sentra AI — Vault Dashboard",
+  feed: "Sentra AI — AI Decision Feed",
+  performance: "Sentra AI — Yield Performance",
+  settings: "Sentra AI — Risk Profile",
+  mint: "Sentra AI — Test Faucet",
+};
 
-  if (window.location.hash !== `#${pageName}`) {
-    window.history.pushState(null, "", `#${pageName}`);
+document.title = pageTitles[pageName] || "Sentra AI";
+  if (window.location.hash !== `${pageName}`) {
+    window.history.pushState(null, "", `${pageName}`);
   }
 
   window.scrollTo({ top: 0, behavior: "smooth" });
