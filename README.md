@@ -93,15 +93,17 @@ Supports all EIP-6963 compatible wallets (MetaMask, Rabby, Coinbase Wallet, etc.
 
 ---
 
+
 ## Running Locally
 
 1. Clone the repo
 ```bash
 git clone https://github.com/yourusername/sentra-ai.git
 cd sentra-ai
+```
 
-- Open with Live Server in VS Code or any local server
-- Connect MetaMask and switch to Mantle Sepolia Testnet:
+Open with Live Server in VS Code or any local server
+ Connect MetaMask and switch to Mantle Sepolia Testnet:
 RPC: https://rpc.sepolia.mantle.xyz
 Chain ID: 5003
 Symbol: MNT
@@ -135,3 +137,4 @@ Track: AI × RWA (Track 3)
 Sponsored by: Mantle
 License
 MIT
+
