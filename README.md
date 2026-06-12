@@ -135,6 +135,8 @@ Built for Mantle Turing Test Hackathon 2026
 Track: AI × RWA (Track 3)
 
 Sponsored by: Mantle
+
+-----
 License
 MIT
 
