@@ -112,8 +112,7 @@ Mint test tokens from the faucet page and start testing
 
 AI Agent Logic
 The agent runs every 5 minutes and follows this decision flow:
-Generates slightly randomized yield rates for each asset each cycle
-Checks for a volatility event (15% random probability)
+Fetches current yield conditions and queries an AI model to evaluate rebalancing decisions (15% random probability)
 Compares current allocation against target allocation for the active risk profile
 If any asset allocation differs by 5% or more, calls updateAllocation on-chain
 Logs every decision to the AI Feed regardless of whether a rebalance occurred
