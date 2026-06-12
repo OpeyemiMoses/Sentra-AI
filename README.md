@@ -8,7 +8,7 @@ Built for the **Mantle Turing Test Hackathon 2026 — Track 3: AI × RWA**.
 
 ## Live Demo
 
-> Deployed on Vercel — [sentra-ai.vercel.app](https://sentra-ai.vercel.app)
+> Deployed on Vercel — [sentra-ai-plum.vercel.app](https://sentra-ai-plum.vercel.app)
 
 ---
 
